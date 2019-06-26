@@ -1,4 +1,4 @@
-let money = prompt("Ваш бюджет на месяц 2020?", ''),
+let money = prompt("Ваш бюджет на месяц март?", ''),
 	time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
 let appData = {
