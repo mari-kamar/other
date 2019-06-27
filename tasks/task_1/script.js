@@ -1,5 +1,6 @@
 let money = prompt ('what is you month income','');
 let time = prompt('data', '');
+
 let appData = {
   budget: money,
   timeData: time,
