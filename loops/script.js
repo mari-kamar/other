@@ -149,3 +149,112 @@ console.log(result);
 console.log(i);*/
 
 //http://code.mu/tasks/javascript/base/rabota-s-matematicheskimi-funkciyami-v-javascript.html
+//Даны переменные a = 10 и b = 3. Найдите остаток от деления a на b 
+/*
+let a = 10;
+let b = 3;
+console.log(a%b);*/
+
+//Даны переменные a и b. Проверьте, что a делится без остатка на b. 
+//Если это так - выведите 'Делится' и результат деления, иначе выведите 'Делится с остатком' и остаток от деления
+/*let a;
+let b;
+function mod(a,b) {
+  if (a%b == 0) {
+    console.log('no mod')
+  } else {
+    console.log(a%b);
+  };
+};
+mod(10,3);
+mod(10,10);*/
+
+//Возведите 2 в 10 степень. Результат запишите в переменную st.
+/*let str;
+str = Math.pow(2,10);
+console.log(str);*/
+
+//Найдите квадратный корень из 245.
+/*let str = Math.sqrt(245);
+console.log(str);*/
+
+//Дан массив с элементами 4, 2, 5, 19, 13, 0, 10. 
+//Найдите квадратный корень из суммы кубов его элементов. Для решения воспользуйтесь циклом for.
+/*let arr = [4, 2, 5, 19, 13, 0, 10];
+let str = [];
+let sum = 0;
+let result;
+for (let i=0; i<arr.length; i++) {
+  str.push(Math.pow(arr[i], 3));
+  sum += str[i];
+}
+result = Math.sqrt(sum);
+console.log(str);
+console.log(sum);
+console.log(result);*/
+
+//Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
+/*let str = Math.sqrt(379);
+console.log(str);
+console.log(Math.round(str));*/
+
+//Найдите квадратный корень из 587. Округлите результат в большую и меньшую стороны, 
+//запишите результаты округления в объект с ключами 'floor' и 'ceil'.
+/*let str = Math.sqrt(587);
+let floor = Math.floor(str);
+let ceil = Math.ceil(str);
+console.log(str);
+console.log(floor);
+console.log(ceil);*/
+
+//Даны числа 4, -2, 5, 19, -130, 0, 10. Найдите минимальное и максимальное число. 
+/*let arr = [4, -2, 5, 19, -130, 0, 10];
+let max = Math.max.apply(null, arr);
+let min = Math.min.apply(null, arr);
+console.log(max);
+console.log(min);*/
+
+//Выведите на экран случайное целое число от 1 до 100. 
+/*function getRandomNum(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+};
+console.log(getRandomNum(1, 100));*/
+
+//Заполните массив 10-ю случайными целыми числами. (Подсказка: нужно воспользоваться циклами for или while). 
+/*let arr = [];
+while (arr.length<10) {
+  function getRandomNum(min, max) {
+    return Math.floor(Math.random() * (max-min) + min);
+  }
+  arr.push(getRandomNum(1,100));
+};
+console.log(arr);*/
+
+//Даны переменные a и b. Найдите найдите модуль разности a и b. Проверьте работу скрипта самостоятельно для различных a и b.
+
+//Даны переменные a и b. Отнимите от a переменную b и результат присвойте переменной c. Сделайте так, чтобы в любом случае в переменную 
+//c записалось положительное значение. Проверьте работу скрипта при a и b, равных соответственно 3 и 5, 6 и 1.
+
+//Дан массив arr. Найдите среднее арифметическое его элементов. Проверьте задачу на массиве с элементами 12, 15, 20, 25, 59, 79.
+/*let arr = [12, 15, 20, 25, 59, 79];
+let sum = 0;
+for (let i = 0; i<arr.length; i++) {
+  sum += arr[i] 
+};
+console.log(sum);
+console.log(sum/arr.length);
+*/
+
+
+//Напишите скрипт, который будет находить факториал числа. Факториал (обозначается !) - 
+//это произведение (умножение) всех целых чисел, меньше данного, и его самого. Например, 4! = 1*2*3*4.
+/*
+function factorial(n) {
+  return (n != 1) ? n*factorial(n-1) : 1;
+}
+console.log(factorial(5));*/
+
+
+
+
+
