@@ -254,7 +254,284 @@ function factorial(n) {
 }
 console.log(factorial(5));*/
 
+//Дана строка 'aaa@bbb@ccc'. Замените все @ на '!' с помощью глобального поиска и замены. 
+/*let str = 'aaa@bbb@ccc';
+console.log(str.replace(/@/g, '!'));*/
+
+//Дана строка 'aaa bbb ccc'. Вырежите из нее слово 'bbb' тремя разными способами
+/*let str = 'aaa bbb ccc';
+console.log(str.substr(4, 3)); 
+console.log(str.substring(4, 7)); 
+console.log(str.slice(4, 7));*/
+
+// В переменной date лежит дата в формате '2025-12-31'. Преобразуйте эту дату в формат '31/12/2025'.
+/*let data = '2025-12-31';
+let arr = data.split('-');
+console.log(arr);
+let newData = arr[2] + '/' + arr[1] + '/' + arr[0];
+console.log(newData);*/
+
+//Дана строка 'js'. Сделайте из нее строку 'JS'.
+/*let str = 'js';
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());*/
+
+//Дана строка 'я учу javascript!'. Найдите количество символов в этой строке. Вырежите из нее слово 'учу' и слово 'javascript' тремя разными способами (
+/*let str = 'I learn javascript!';
+console.log(str.length);
+console.log(str.substr(2));
+console.log(str.substring(2))
+console.log(str.slice(2))
+console.log(str);
+console.log(str.indexOf('learn', 2));*/
+
+//Дана переменная str, в которой хранится какой-либо текст. 
+//Реализуйте обрезание длинного текста по следующему принципу: если количество символов 
+//этого текста больше заданного в переменной n, то в переменную result запишем первые n 
+//символов строки str и добавим в конец троеточие '...'. В противном случае в переменную result запишем содержимое переменной str
+/*let str = 'It would be a good reason to sell this apartment, because it is far away from sea and I can not go there by walk every morning';
+let n = 18;
+let result;
+console.log(str.length);
+if (str.length>n) {
+  result = str.slice(0, n) + '...';
+} else {
+  result = str;
+}
+console.log(result);*/
+
+// Дана строка 'Я-учу-javascript!'. Замените все дефисы на '!' с помощью глобального поиска и замены.
+/*let str = 'I-learn-javascript';
+console.log(str.replace(/-/g,'!'));*/
+
+//Дана строка 'я учу javascript!'. С помощью метода split запишите каждое слово этой строки в отдельный элемент массива.
+//Дана строка 'я учу javascript!'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+/*let str = 'I learn javascript';
+let arr = str.split(' ');
+let arrElem = str.split('');
+console.log(arr);
+console.log(arrElem);*/
+
+//В переменной date лежит дата в формате '2025-12-31'. Преобразуйте эту дату в формат '31.12.2025'.
+/*let data = '2025-12-31';
+let arr = data.split('-');
+let newData = arr[2] + '.' + arr[1] + '.' + arr[0];
+console.log(newData);*/
+
+//Дан массив ['я', 'учу', 'javascript', '!']. С помощью метода join преобразуйте массив в строку 'я+учу+javascript+!'.
+/*let arr = ['I', 'learn', 'javascript', '!'];
+console.log(arr.join(' '));*/
+
+//Преобразуйте первую букву строки в верхний регистр. Преобразуйте первую букву каждого слова строки в верхний регистр.
+/*let str = 'i learn javascript';
+let newStr = str.charAt(0).toUpperCase() + str.slice(1);
+console.log(newStr);
+
+function Capitalizer(someStr) {
+  let arr = someStr.split(' ');
+
+  console.log(arr);
+
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+  };
+
+  let result = arr.join(' ');
+
+  console.log(result);
+}
+Capitalizer('i want buy it');*/
+
+//Преобразуйте строку 'var_test_text' в 'varTestText'. Скрипт, конечно же, должен работать с любыми аналогичными строками.
+/*function changeText(someText) {
+  let arr = someText.split('_');
+  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    if (i>=1) {
+      arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    } else {
+      arr[i] = arr[i].toLowerCase();
+    }
+  }
+  let result = arr.join('');
+  console.log(result);
+}
+
+changeText('Var_test_text');*/
+
+//Даны два массива: ['a', 'b', 'c'] и [1, 2, 3]. Объедините их вместе.
+/*let arr1 = ['a', 'b', 'c'];
+let arr2 = [1, 2, 3];
+let result = arr1.concat(arr2);
+console.log(result);*/
+
+//Дан массив ['a', 'b', 'c']. Добавьте ему в конец элементы 1, 2, 3.
+/*let arr1 = ['a', 'b', 'c'];
+let arr2 = arr1.push(1, 2, 3);
+console.log(arr1);*/
+
+//Заполним массив числами от 1 до 10:
+/*let arr = [];
+for (let i = 1; i <=10; i++) {
+  arr.push(i);
+};
+console.log(arr);*/
+
+//Даны два массива: [1, 2, 3] и [4, 5, 6]. Объедините их вместе.
+/*let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let result = arr1.concat(arr2);
+console.log(result);*/
+
+//Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1].
+/*let arr = [1, 2, 3];
+console.log(arr.reverse());*/
+
+//Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6.
+/*let arr = [1, 2, 3];
+arr.push(4, 5, 6);
+console.log(arr);*/
+
+//Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
+/*let arr = [1, 2, 3];
+arr.unshift(4, 5, 6);
+console.log(arr);*/
+
+//Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент.
+/*let arr = ['js', 'css', 'jq'];
+console.log(arr[0]);
+console.log(arr[arr.length - 1]);
+console.log(arr);
+arr.pop();
+console.log(arr);
+arr.shift();
+console.log(arr);*/
+
+//Пусть дан массив ['1', '2', '3', '4', '5', '6']. Давайте сделаем из него строку '16-25-34'.
+/*let arr = ['1', '2', '3', '4', '5', '6'];
+let result = [];
+
+while(arr.length > 0) {
+  let first = arr.shift();
+  let last = arr.pop();
+  let str = first + last;
+  result.push(str);
+}
+console.log(result);
+result = result.join('-');
+console.log(result);*/
+
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
+/*let arr = [1, 2, 3, 4, 5];
+let result = arr.slice(0,3);
+console.log(result);*/
+
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
+/*let arr = [1, 2, 3, 4, 5];
+let result = arr.slice(3);
+console.log(result);*/
+
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].
+/*let arr = [1, 2, 3, 4, 5];
+let result = arr.splice(1,2);
+console.log(result);
+console.log(arr);*/
+
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
+/*let arr = [1, 2, 3, 4, 5];
+let result = arr.splice(1,3);
+console.log(result);*/
+
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 2, 3, 'a', 'b', 'c', 4, 5].
+/*let arr = [1, 2, 3, 4, 5];
+arr.splice(2,0,'a', 'b', 'c');
+console.log(arr);*/
+
+//Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
+/*let arr = [1, 2, 3, 4, 5];
+arr.splice(1,0,'a','b');
+console.log(arr);
+arr.splice(6,0,'c');
+console.log(arr);
+console.log(arr.length);
+arr.splice(arr.length,0,'e');
+console.log(arr);*/
+
+//Дан массив [3, 4, 1, 2, 7]. Отсортируйте его.
+/*let arr = [3, 4, 1, 2, 7];
+console.log(arr.sort());*/
+
+//Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
+/*let obj = {js:'test', jq: 'hello', css: 'world'};
+console.log(obj);
+console.log(Object.keys(obj));*/
 
 
+//Дана строка. Сделайте заглавным первый символ этой строки не используя цикл. 
+/*let str = 'something here';
+console.log(str.charAt(0).toUpperCase() + str.slice(1));
+
+let arr = str.split('');
+arr[0] = arr[0].toUpperCase()
+console.log(arr.join(''));*/
+
+//Дана строка, например, '123456'. Переверните эту строку (сделайте из нее '654321') не используя цикл
+/*let str = '123456';
+let arr = str.split('');
+arr.reverse();
+let result = arr.join('');
+console.log(arr);
+console.log(result);*/
+
+//Проверьте, что строка начинается на http://
+/*let str = 'sf http:// check it starts';
+let arr = str.split(' ');
+console.log(arr);
+if (arr[0] == 'http://') {
+  console.log('the line starts from http://')
+} else {
+  console.log('write the right url')
+};*/
+
+//Проверьте, что строка заканчивается на .html
+/*let str = 'file:///C:/Users/mgengalycheva/udemy_js/udemy/loops/index.html';
+if (str.substr(-5) == '.html') {
+  console.log('yes');
+} else {
+  console.log('no');
+};*/
+
+//Сделайте функцию, которая возвращает куб числа. Число передается параметром
+/*function cube(num) {
+  return num*num*num;
+}
+console.log(cube(2));
+console.log(cube(4));*/
+
+//Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
+/*function square(num) {
+  return num*num;
+};
+console.log(square(2));
+console.log(square(3));*/
+
+//Сделайте функцию, которая возвращает сумму двух чисел.
+/*function sum(a,b) {
+  return a+b;
+};
+console.log(sum(2,4));
+console.log(sum(5,5));*/
+
+//Сделайте функцию, которая отнимает от первого числа второе и делит на третье.
+/*function example(a,b,c) {
+  return (a-b)/c;
+};
+console.log(example(5,2,3));*/
+
+//Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
+
+function getWeekDay(days) {
+  let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+}
 
 
