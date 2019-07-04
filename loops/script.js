@@ -529,9 +529,174 @@ console.log(sum(5,5));*/
 console.log(example(5,2,3));*/
 
 //Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
-
-function getWeekDay(days) {
-  let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+/*function getWeekDay(key) {
+  let obj = {
+    1: 'mon',
+    2: 'tue',
+    3: 'wen',
+    4: 'thu',
+    5: 'fri',
+    6: 'sat',
+    7: 'sun'
+  };
+  return obj[key];
 }
 
+console.log(getWeekDay(2));*/
 
+//Дан массив с числами. Проверьте, что в этом массиве есть число 5. Если есть - выведите 'да', а если нет - выведите 'нет
+/*let arr = [1, 9, 7, 12];
+if (arr.indexOf(5) == '5') {
+  console.log('here is a number 5')
+} else {
+  console.log('here is no number 5')
+};*/
+
+// Дано число, например 31. Проверьте, что это число не делится ни на одно другое число кроме себя самого и единицы. 
+//То есть в нашем случае нужно проверить, что число 31 не делится на все числа от 2 до 30. Если число не делится - 
+//выведите 'false', а если делится - выведите 'true'.
+/*let num = 31;
+let flag = false;
+
+for (let i = 2; i < num; i++) {
+  if (num%i == 0) {
+    flag = true;
+    console.log(i + ' no mod');
+  } else {
+    flag = false;
+    console.log(i + ' it has mod');
+  };
+};*/
+
+//Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.
+/*let arr = [12, 4, 6, 8, 12, 5];
+let duplicate = false;
+
+for (let i = 0; i < arr.length; i++) {
+
+  if (arr[i] === arr[i-1]) {
+    console.log(arr[i] + ' == ' + ' and next number are equal');
+    duplicate = true;
+  } 
+};
+if (!duplicate) {
+  console.log('no duplicates');
+};*/
+
+/*function hasEqNext(arr) {
+  return arr.some(function(el, i, arr) {
+    return i!=0 && el === arr[i-1];
+  });
+};
+console.log(hasEqNext([1, 2, 3, 4]));
+console.log(hasEqNext([1, 2, 3, 3, 5, 4]));*/
+
+//Сделайте функцию, которая параметрами принимает 2 числа. Если эти числа равны - пусть функция вернет true, а если не равны - false.
+/*function equal(a,b) {
+  if (a===b) {return true} else 
+  {return false;}
+};
+console.log(equal(2,5));
+console.log(equal(5,5));*/
+
+//Сделайте функцию, которая параметрами принимает 2 числа. Если их сумма больше 10 - пусть функция вернет true, а если нет - false.
+/*function sum(a,b) {
+  if((a+b) > 10) {
+    return a+b; 
+  } else {
+    return false;
+  };
+};
+console.log(sum(56,5));
+console.log(sum(5,5));*/
+
+//Сделайте функцию, которая параметром принимает число и проверяет - отрицательное оно или нет. Если отрицательное - пусть функция вернет true, а если нет - false.
+/*function negativeNumber(a) {
+  if (a < 0) {return true;}
+  else {return false;};
+};
+console.log(negativeNumber(-2));
+console.log(negativeNumber(0));*/
+
+/*function negativeNumber(num) {
+  return num < 0;
+};
+console.log(negativeNumber(-1));
+console.log(negativeNumber(2));*/
+
+//С помощью цикла for сформируйте строку '123456789' и запишите ее в переменную str.
+/*let str = '';
+for (let i = 1; i < 10; i++) {
+  //console.log(i);
+  str = str + i;
+}
+console.log(str);*/
+
+//С помощью цикла for сформируйте строку '987654321' и запишите ее в переменную str
+/*let str = '';
+for (let i = 9; i > 0; i--) {
+  str = str + i;
+};
+console.log(str);*/
+
+//С помощью цикла for сформируйте строку '-1-2-3-4-5-6-7-8-9-' и запишите ее в переменную str
+/*let str = '';
+for (let i = 1; i <= 9; i++) {
+  str = str + '-' + i;
+}
+console.log(str + '-');*/
+
+//Нарисуйте пирамиду, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+/*let str = 'x';
+for (let i = 1; i <=20; i++) {
+  console.log(str);
+  str = str + 'x';
+};*/
+
+//С помощью двух вложенных циклов нарисуйте следующую пирамидку:
+/*for (let i = 1; i <=9; i++) {
+  for (let j = 1; j <=i; j++) {
+    console.log(i);
+    document.write(i);
+  }
+};*/
+
+//Сделать обратную пирамиду
+/*for (let i = 9; i >0; i--) {
+  for (let j = 1; j <=i; j++) {
+    document.write(i);
+  };
+  document.write('<br>');
+};*/
+
+//Нарисуйте пирамиду, как показано на рисунке, воспользовавшись циклом for:
+/*let str = 'xx';
+for (let i = 1; i <=5; i++) {
+  console.log(str);
+  str = str + 'xx';
+};*/
+
+//Заполните массив следующим образом: в первый элемент запишите 'x', во второй 'xx', в третий 'xxx' и так далее
+/*let arr = [];
+let x = 'x';
+
+for (let i=1; i<=10; i++) {
+  arr.push(x);
+  x += 'x';
+}
+console.log(arr);*/
+
+//Заполните массив следующим образом: в первый элемент запишите '1', во второй '22', в третий '333' и так далее.
+let arr = [];
+
+for (let i = 1; i < 10; i++) {
+  let str = '';
+  
+  for (let j=0; j < i; j++) {
+    str = str + i;
+  }
+  arr.push(str);
+}
+console.log(arr);
+
+//http://code.mu/tasks/javascript/base/priemy-raboty-s-massivami-na-javascript.html 
