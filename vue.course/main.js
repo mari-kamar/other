@@ -5,6 +5,7 @@ var app = new Vue ({
     product: 'apples',
     type: String,
     message: 'You will find here:',
-    image: 'img.jpg'
+    image: 'img.jpg',
+    count: 8
   }
 })

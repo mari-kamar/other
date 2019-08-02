@@ -10,6 +10,12 @@
     <h4 >{{ message + ' ' + product}}</h4>
 
     <img v-bind:src="image" style="width:100px; height: 100px;">
+
+    <p v-if="count > 10">have it</p>
+    <p v-else-if="count < 10 && count > 0">almost done</p>
+    <p v-else>don't have it</p>
+
+    
   </div>
 
   <script src="main.js"></script>
